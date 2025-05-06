@@ -10,7 +10,6 @@
     move.style.right=`${0}px`
 
 
-
 })
 
     
