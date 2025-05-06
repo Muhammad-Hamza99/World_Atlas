@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { RxCross1 } from "react-icons/rx";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { setIcon } from "./head.js";
+import { removeIcon, setIcon } from "./head.js";
 import { useEffect } from "react";
 
 
@@ -9,6 +9,7 @@ export const Header = ()=>{
 
     useEffect(()=>{
         setIcon();
+        removeIcon();
     },[]);
 
 

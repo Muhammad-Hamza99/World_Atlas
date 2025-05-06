@@ -7,6 +7,8 @@ export const Country = ()=>{
 
 
     const res  = useLoaderData();
+    console.log(res.data);
+    
    
 
   

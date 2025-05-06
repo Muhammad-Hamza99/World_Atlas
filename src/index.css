@@ -111,6 +111,7 @@ input,textarea{
       & span{
         font-size: 3rem;
         cursor: pointer;
+        display: none;
       }
 
     }
@@ -289,6 +290,15 @@ input,textarea{
 
 }
 
+@media (width<1300px) {
+  .section-country .container{
+    & .grid-four--cols{
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    }
+
+  }
+}
+
 @media (width<=1256px) {
   .section-about{
     & .grid-three--cols{
@@ -326,9 +336,12 @@ input,textarea{
         top: 0;
         padding: 20px;
         padding-top: 30px;
-
-      
-      }
+        transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        -moz-transition: all .2s linear;
+        -ms-transition: all .2s linear;
+        -o-transition: all .2s linear;
+}
 
       & nav ul .icon{
         display: initial;
@@ -336,6 +349,10 @@ input,textarea{
         font-weight: 900;
         cursor: pointer;
         margin-bottom: 1rem;
+      }
+
+      & nav .hamburger-icon span{
+        display: initial;
       }
     
     }
@@ -416,6 +433,18 @@ input,textarea{
         justify-content: center;
     }
 }
+}
+
+@media (width<720px) {
+  .section-country .container{
+    & .header{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+  }
+  
 }
 
 @media (width<=519px) {
