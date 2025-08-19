@@ -1,3 +1,3 @@
 # World Atlas 
 
-[world-atlas](world-atlas-henna.vercel.app)
+[world-atlas](https://world-atlas-henna.vercel.app)
